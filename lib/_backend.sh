@@ -125,6 +125,10 @@ backend_node_build() {
 
   sudo su - deploy <<EOF
   cd /home/deploy/${instancia_add}/backend
+  if ! npx tsc --version &> /dev/null; then
+    echo "TypeScript não encontrado localmente, tentando instalar..."
+    npm install --save-dev typescript
+  fi
   npm run build
 EOF
 
@@ -217,7 +221,9 @@ backend_start_pm2() {
 
   sudo su - deploy <<EOF
   cd /home/deploy/${instancia_add}/backend
-  pm2 start dist/server.js --name ${instancia_add}-backend
+  pm2 start dist/server.js --name ${instancia_add}-backend --node-args="--max-old-space-size=24576"
+
+
 EOF
 
   sleep 2

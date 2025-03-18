@@ -23,15 +23,16 @@ print_banner() {
 
 printf "${CYAN_LIGHT}";
 
+printf ${CYAN_LIGHT}"   ____  _____  _____ ____  _   _    _____ _      ____  _    _ _____  \n";  
+printf ${CYAN_LIGHT}"  / __ \|  __ \|_   _/ __ \| \ | |  / ____| |    / __ \| |  | |  __ \ \n"; 
+printf ${CYAN_LIGHT}" | |  | | |__) | | || |  | |  \| | | |    | |   | |  | | |  | | |  | |\n"; 
+printf ${CYAN_LIGHT}" | |  | |  _  /  | || |  | |     | | |    | |   | |  | | |  | | |  | |\n"; 
+printf ${CYAN_LIGHT}" | |__| | | \ \ _| || |__| | |\  | | |____| |___| |__| | |__| | |__| |\n"; 
+printf ${CYAN_LIGHT}"  \____/|_|  \_\_____\____/|_| \_|  \_____|______\____/ \____/|_____/ \n"; 
+                                                                      
 
-printf ${CYAN_LIGHT}" ____   ____  ________  ____    ____   ________    _       ________  ________  _______   \n";  
-printf ${CYAN_LIGHT}"|_  _| |_  _||_   __  ||_   \  /   _| |_   __  |  / \     |  __   _||_   __  ||_   __ \  \n"; 
-printf ${CYAN_LIGHT}"  \ \   / /    | |_ \_|  |   \/   |     | |_ \_| / _ \    |_/  / /    | |_ \_|  | |__) | \n";
-printf ${CYAN_LIGHT}"   \ \ / /     |  _| _   | |\  /| |     |  _|   / ___ \      .'.' _   |  _| _   |  __ /  \n";
-printf ${CYAN_LIGHT}"    \ ' /     _| |__/ | _| |_\/_| |_   _| |_  _/ /   \ \_  _/ /__/ | _| |__/ | _| |  \ \_\n";
-printf ${CYAN_LIGHT}"     \_/     |________||_____||_____| |_____||____| |____||________||________||____| |___|\n";
                                                                                                                                                          
-  printf "            \033[1;33m        © CANAL VEM FAZER - https://www.youtube.com/channel/UCwFO9ylM7gHxYIXfJqAo1vQ\n";
+  printf "            \033[1;33m                © SAC INTEGRADO - Solução Completa de Atendimento via WhatsApp";
   printf "${NC}";
 
   printf "\n"
